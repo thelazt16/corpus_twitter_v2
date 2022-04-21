@@ -142,13 +142,14 @@ const getCorpus = async () => {
   }
 };
 
-const sleep = (miliseconds) =>
-  new Promise((resolve) => setTimeout(resolve, miliseconds));
+getCorpus();
+// const sleep = (miliseconds) =>
+//   new Promise((resolve) => setTimeout(resolve, miliseconds));
 
-const repeat = async (minute) => {
-  await getCorpus();
-  await sleep(minute * 60000);
-  await repeat();
-};
+// const repeat = async (minute) => {
+//   await getCorpus();
+//   await sleep(minute * 60000);
+//   await repeat();
+// };
 
-repeat(1);
+// repeat(1);
