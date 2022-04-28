@@ -10,7 +10,7 @@ do
   echo "Script Finished"
   currentTime=`TZ='Asia/Jakarta' date`
   echo "Finish time: $currentTime"
-  nextTime=`TZ='Asia/Jakarta' date -d "+5 min"`
+  nextTime=`TZ='Asia/Jakarta' date -d "+30 min"`
   echo "Next run: $nextTime"
-  sleep 300
+  sleep 1800
 done
