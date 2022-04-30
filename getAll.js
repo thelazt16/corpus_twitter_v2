@@ -23,7 +23,7 @@ const getLastTweetsIds = async () => {
 const getTweet = async () => {
   const twitterClient = new TwitterApi(process.env.BEARER_TOKEN);
 
-  const tweets = await twitterClient.v2.search("indonesia", {
+  const tweets = await twitterClient.v2.search("lang:id indonesia", {
     max_results: 100,
     "tweet.fields": "lang",
   });
